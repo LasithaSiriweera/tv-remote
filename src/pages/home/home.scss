@@ -1,0 +1,64 @@
+page-home {
+    .head-bar{
+        text-align: center
+    }
+
+    .remote-body{
+        background-color: black
+    }
+
+    .numbers{
+       height: 50px;
+       width: 100%;
+       margin-bottom: 0vh
+    }
+
+    .number-row{
+    
+    }
+
+    .number-col{
+        height: 50px;
+        width: 100%;
+    }
+
+    .btn-ok{
+        height: 40px;
+        width: 40px;
+    }
+
+    .lt_buttons{
+        height: 30px;
+        width: 100%;
+    }
+
+    .control-btn{
+        height: 30px;
+        width: 100%;
+        background: rgb(52, 142, 245);
+    }
+
+    .volume-btn{
+        height: 40px;
+        width: 100%;
+        background: rgb(185, 201, 224);
+    }
+
+    .menu-btn{
+        height: 30px;
+        width: 100%;
+    }
+
+    .mute-btn{
+        height: 30px;
+        width: 100%;
+        margin-bottom: 8vh
+    }
+
+    .ch-list-btn{
+        height: 30px;
+        width: 100%;
+     
+    }
+
+}

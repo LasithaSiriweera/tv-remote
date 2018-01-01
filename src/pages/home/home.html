@@ -1,0 +1,433 @@
+
+        <ion-header>
+            <ion-title class="head-bar">Samsung</ion-title>
+
+        </ion-header>
+
+
+    <ion-slides pager class="remote-body">
+
+
+        <ion-slide>
+            <ion-grid>
+                <!-- Top Level Buttons -->
+                <ion-row>
+                    <ion-col col-4>
+                      <ion-buttons start>
+                        <button ion-button color=danger round icon-only (click)="addAction('power')">
+                          <ion-icon name="power"></ion-icon>
+                        </button>
+                      </ion-buttons>
+                    </ion-col>
+                    <ion-col col-4>
+                      <button ion-button color=light (click)="addAction('HDMI')" style="width: 100%">HDMI</button>
+                    </ion-col>
+                    <ion-col col-4>
+                      <button ion-button color=light (click)="addAction('Source')" style="width: 100%">Source</button>
+                    </ion-col>
+                  </ion-row>
+
+
+                <!-- Button row 1 -->
+                <ion-row class="number-row">
+                  <ion-col col-4 >
+                    <div text-center>
+                      <button color=light ion-button class="numbers" (click)="addAction('1')">
+                        1
+                      </button>
+                    </div>
+                  </ion-col>
+                  <ion-col col-4>
+                    <div text-center>
+                      <button color=light ion-button class="numbers" (click)="addAction('2')">
+                        2
+                      </button>
+                    </div>
+                  </ion-col>
+                  <ion-col col-4>
+                    <div text-center>
+                      <button color=light ion-button class="numbers" (click)="addAction('3')">
+                        3
+                      </button>
+                    </div>
+                  </ion-col>
+                </ion-row>
+            
+            
+                <!-- Button row 2 -->
+                <ion-row>
+                    <ion-col col-4>
+                      <div text-center>
+                        <button color=light ion-button class="numbers" (click)="addAction('4')">
+                          4
+                        </button>
+                      </div>
+                    </ion-col>
+                    <ion-col col-4>
+                      <div text-center>
+                        <button color=light ion-button class="numbers" (click)="addAction('5')">
+                          5
+                        </button>
+                      </div>
+                    </ion-col>
+                    <ion-col col-4>
+                      <div text-center>
+                        <button color=light ion-button class="numbers" (click)="addAction('6')">
+                          6
+                        </button>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+            
+                  <!-- Button row 3 -->
+                <ion-row>
+                    <ion-col col-4>
+                      <div text-center>
+                        <button color=light ion-button class="numbers" (click)="addAction('7')">
+                          7
+                        </button>
+                      </div>
+                    </ion-col>
+                    <ion-col col-4>
+                      <div text-center>
+                        <button color=light ion-button class="numbers" (click)="addAction('8')">
+                          8
+                        </button>
+                      </div>
+                    </ion-col>
+                    <ion-col col-4>
+                      <div text-center>
+                        <button color=light ion-button class="numbers" (click)="addAction('9')">
+                          9
+                        </button>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+            <!-- Button row 4 -->
+            <ion-row>
+                <ion-col col-4>
+                  <div text-center>
+                    <button color=light ion-button class="numbers" (click)="addAction('-')">
+                      -
+                    </button>
+                  </div>
+                </ion-col>
+                <ion-col col-4>
+                  <div text-center>
+                    <button color=light ion-button class="numbers" (click)="addAction('0')">
+                      0
+                    </button>
+                  </div>
+                </ion-col>
+                <ion-col col-4>
+                  <div text-center>
+                    <button color=light ion-button class="numbers" (click)="addAction('Previous channel')">
+                      Pre-Ch
+                    </button>
+                  </div>
+                </ion-col>
+              </ion-row>
+            
+              </ion-grid>
+            
+            <!--Volume and changing channels-->
+            <div >
+                <ion-grid>
+                  <ion-row>
+                      <ion-col text-center col-4>
+
+                              <div text-center>
+                                  <button color=light ion-button (click)="addAction('Volume up')" class="volume-btn">
+                                    <ion-icon name="add"></ion-icon>
+                                  </button>
+                                </div>
+                                <strong style="color: white">VOL</strong>
+                                <div text-center>
+                                    <button color=light ion-button (click)="addAction('Volume down')" class="volume-btn">
+                                      <ion-icon name="remove"></ion-icon>
+                                    </button>
+                                  </div>
+                          
+                        </ion-col>
+            
+                        <ion-col col-.5 ></ion-col>
+                        <ion-col col-3 item-center>
+                        <div>
+                            <button color=light ion-button (click)="addAction('Mute')" class="mute-btn">
+                              <p>mute</p> <br>
+                            </button>
+                            
+                            <button color=light ion-button (click)="addAction('Channe list')" class="ch-list-btn">
+                              <p>ch list</p>
+                              </button>
+                            </div>
+                        </ion-col>
+                        <ion-col col-.5 ></ion-col>
+            
+                          <ion-col col-4 text-center>
+                              <div text-center>
+                                  <button color=light ion-button (click)="addAction('Channel up')" class="volume-btn">
+                                    <ion-icon name="ios-arrow-up"></ion-icon>
+                                  </button>
+                                </div>
+                                <strong style="color: white">CH</strong>
+                                <div text-center>
+                                    <button color=light ion-button (click)="addAction('Channel down')" class="volume-btn" style="bottom: 0">
+                                      <ion-icon name="ios-arrow-down"></ion-icon>
+                                    </button>
+                                  </div>
+                            </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </div>
+        </ion-slide>
+
+        <!--page 2-->
+
+      <ion-slide>
+
+          <div>
+              <ion-grid>
+                <ion-row>
+                  <ion-col col-4>
+                      <div text-center>
+                          <button color=light ion-button (click)="addAction('Menu')" class="menu-btn">
+                            <strong>menu</strong>
+                          </button>
+                        </div>
+                  </ion-col>
+                  <ion-col col-4></ion-col>
+                  <ion-col col-4>
+                      <div text-center>
+                          <button color=light ion-button (click)="addAction('Guide')" class="menu-btn">        
+                            <strong>Guide</strong>
+                          </button>
+                        </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </div>
+            
+              <div style="margin-bottom: 0px">
+                <ion-grid>
+                  <ion-row>
+                    <ion-col col-1></ion-col>
+                    <ion-col col-10>
+                      <div>
+                        <ion-grid>
+                          <ion-row>
+                            <ion-col col-4>
+                              <div text-center>
+                    
+                              </div>
+                            </ion-col>
+                            <ion-col col-4>
+                              <div text-center>
+                                <button color=light ion-button (click)="addAction('Arrow up')">
+                                  <ion-icon name="md-arrow-dropup" ></ion-icon>
+                                </button>
+                              </div>
+                            </ion-col>
+                            <ion-col col-4>
+                              <div text-center>
+                    
+                              </div>
+                            </ion-col>
+                          </ion-row>
+                          <ion-row>
+                            <ion-col col-4>
+                              <div text-center>
+                                <button color=light ion-button (click)="addAction('Arrow left')">
+                                  <ion-icon name="md-arrow-dropleft"></ion-icon>
+                                </button>
+                              </div>
+                            </ion-col>
+                            <ion-col col-4>
+                              <div text-center>
+                                <button color=light round ion-button (click)="addAction('OK')" class="btn-ok">
+                                  ok
+                                </button>
+                              </div>
+                            </ion-col>
+                            <ion-col col-4>
+                              <div text-center>
+                                <button color=light ion-button (click)="addAction('Arrow right')">
+                                  <ion-icon name="md-arrow-dropright"></ion-icon>
+                                </button>
+                              </div>
+                            </ion-col>
+                          </ion-row>
+                          <ion-row>
+                            <ion-col col-4>
+                              <div text-center>
+                    
+                              </div>
+                            </ion-col>
+                            <ion-col col-4>
+                              <div text-center>
+                                <button color=light ion-button (click)="addAction('Arrow down')">
+                                  <ion-icon name="md-arrow-dropdown" ></ion-icon>
+                                </button>
+                              </div>
+                            </ion-col>
+                            <ion-col col-4>
+                              <div text-center>
+                    
+                              </div>
+                            </ion-col>
+                          </ion-row>
+                        </ion-grid>
+                      </div>
+                    </ion-col>
+                    <ion-col col-1></ion-col>
+                  </ion-row>
+                </ion-grid>
+              </div>
+            
+               
+            
+              <div>
+                <ion-grid>
+                  <ion-row>
+                    <ion-col col-3>
+                      <div text-center>
+                        <button color=danger ion-button (click)="addAction('A')" class="lt_buttons">
+                         A
+                        </button>
+                      </div>
+                    </ion-col>
+                    <ion-col col-3>
+                      <div text-center>
+                        <button color=secondary ion-button (click)="addAction('B')" class="lt_buttons">
+                          B
+                        </button>
+                      </div>
+                    </ion-col>
+                    <ion-col col-3>
+                      <div text-center>
+                        <button style="background: yellow" ion-button (click)="addAction('C')" class="lt_buttons">
+                          C
+                        </button>
+                      </div>
+                    </ion-col>
+                    <ion-col col-3>
+                      <div text-center>
+                        <button  ion-button (click)="addAction('D')" class="lt_buttons">
+                          D
+                        </button>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </div>
+            
+            
+            <!--Bottom button set-->
+              <div>
+                  <ion-grid>
+            
+                    <ion-row>
+                      <ion-col col-4>
+                        <div text-center>
+                          <button color=light ion-button (click)="addAction('Infro')" class="lt_buttons">
+                           INFOR
+                          </button>
+                        </div>
+                      </ion-col>
+                      <ion-col col-4>
+                        <div text-center>
+                          <button color=light ion-button (click)="addAction('HDMI')" class="lt_buttons">
+                            HDMI
+                          </button>
+                        </div>
+                      </ion-col>
+                      <ion-col col-4>
+                        <div text-center>
+                          <button color=light ion-button (click)="addAction('P.MODE')" class="lt_buttons">
+                            P.MODE
+                          </button>
+                        </div>
+                      </ion-col>
+                    </ion-row>
+            
+                    <ion-row>
+                        <ion-col col-4>
+                          <div text-center>
+                            <button color=light ion-button (click)="addAction('Support')" class="lt_buttons">
+                             Support
+                            </button>
+                          </div>
+                        </ion-col>
+                        <ion-col col-4>
+                          <div text-center>
+                            <button color=light ion-button (click)="addAction('P.Size')" class="lt_buttons">
+                              P.Size
+                            </button>
+                          </div>
+                        </ion-col>
+                        <ion-col col-4>
+                          <div text-center>
+                            <button color=light ion-button (click)="addAction('Source')" class="lt_buttons">
+                              SRC
+                            </button>
+                          </div>
+                        </ion-col>
+                      </ion-row>
+            
+                      <ion-row>
+                          <ion-col col-4>
+                            <div text-center>
+                              <button color=light ion-button (click)="addAction('rewind')" class="control-btn">
+                                <ion-icon name="rewind"></ion-icon>
+                              </button>
+                            </div>
+                          </ion-col>
+                          <ion-col col-4>
+                            <div text-center>
+                              <button color=light ion-button (click)="addAction('Pause')" class="control-btn">
+                                <ion-icon name="pause"></ion-icon>
+                              </button>
+                            </div>
+                          </ion-col>
+                          <ion-col col-4>
+                            <div text-center>
+                              <button color=light ion-button (click)="addAction('fastforward')" class="control-btn">
+                                <ion-icon name="fastforward"></ion-icon>
+                              </button>
+                            </div>
+                          </ion-col>
+                        </ion-row>
+            
+                        <ion-row>
+                            <ion-col col-4>
+                              <div text-center>
+                                <button color=light ion-button (click)="addAction('ON')" class="control-btn">
+                                    <ion-icon name="radio-button-on" color=danger></ion-icon>
+                                </button>
+                              </div>
+                            </ion-col>
+                            <ion-col col-4>
+                              <div text-center>
+                                <button color=light ion-button (click)="addAction('Play')" class="control-btn">
+                                    <ion-icon name="play"></ion-icon>
+                                </button>
+                              </div>
+                            </ion-col>
+                            <ion-col col-4>
+                              <div text-center>
+                                <button color=light ion-button (click)="addAction('Stop')" class="control-btn">
+                                    <ion-icon name="square"></ion-icon>
+                                </button>
+                              </div>
+                            </ion-col>
+                          </ion-row>
+               
+                  </ion-grid>
+                </div>
+      </ion-slide>
+    </ion-slides>
+
+ 
+
+
+
